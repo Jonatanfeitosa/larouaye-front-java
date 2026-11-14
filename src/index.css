@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* Paleta do LarOuAyê (roteiro do front): vira classes como bg-azul, text-grafite, bg-ouro */
+@theme {
+  --color-azul: #102b35;
+  --color-ouro: #d8b875;
+  --color-cinza: #f2f4f3;
+  --color-grafite: #263238;
+  /* Cores de estado (não estão na paleta de marca, mas status não pode depender só de dourado) */
+  --color-erro: #9b1c1c;
+  --color-ok: #166534;
+}
+
+@layer base {
+  /* Tamanho de fonte ajustável pelo usuário: tudo em rem acompanha */
+  html {
+    font-size: 100%;
+  }
+  html[data-fonte="grande"] {
+    font-size: 118%;
+  }
+  html[data-fonte="maior"] {
+    font-size: 135%;
+  }
+
+  body {
+    background-color: var(--color-cinza);
+    color: var(--color-grafite);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: var(--color-azul);
+  }
+
+  /* Foco sempre visível para quem navega só pelo teclado */
+  :focus-visible {
+    outline: 3px solid var(--color-azul);
+    outline-offset: 2px;
+  }
+}
+
+/* Leitura fácil: linhas curtas, mais espaço entre linhas, letras e parágrafos. */
+html[data-leitura="facil"] body { line-height: 2; letter-spacing: 0.03em; word-spacing: 0.08em; }
+html[data-leitura="facil"] main p,
+html[data-leitura="facil"] main li { max-width: 60ch; }
+html[data-leitura="facil"] main p + p,
+html[data-leitura="facil"] main li + li { margin-top: 0.75rem; }
+
+/* Alto contraste: preto sobre branco, bordas fortes. */
+html[data-contraste="alto"] body { background: #fff; color: #000; }
+html[data-contraste="alto"] h1, html[data-contraste="alto"] h2, html[data-contraste="alto"] h3 { color: #000; }
+html[data-contraste="alto"] main a { color: #0000ee; }
+html[data-contraste="alto"] main { --color-azul: #000; }
+
+/* Boca da Casinha mexendo enquanto ela fala (desligada se a pessoa pediu menos movimento). */
+@keyframes casinha-fala { 0%, 100% { transform: scaleY(0.4); } 50% { transform: scaleY(1.4); } }
+.casinha-boca-fala { transform-box: fill-box; transform-origin: center; animation: casinha-fala 0.28s infinite; }
+@media (prefers-reduced-motion: reduce) { .casinha-boca-fala { animation: none; } }

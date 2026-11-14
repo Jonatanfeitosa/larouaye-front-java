@@ -1,4 +1,4 @@
-import type { BaseLegal } from './orientacao'
+import type { BaseLegal } from './orientacao.ts'
 
 export interface ConsultaRequisicao {
   pergunta: string

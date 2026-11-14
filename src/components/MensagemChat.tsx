@@ -1,5 +1,5 @@
 import { Button } from './Button'
-import { textoParaVoz, type Mensagem, type Voz } from './mensagemTipos'
+import { textoParaVoz, type Mensagem, type Voz } from './mensagemTipos.ts'
 
 export function MensagemChat({ mensagem, voz }: { mensagem: Mensagem; voz: Voz }) {
   if (mensagem.autor === 'usuario') {

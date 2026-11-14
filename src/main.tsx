@@ -4,7 +4,7 @@ import { RouterProvider } from 'react-router/dom'
 import { AcessibilidadeProvider } from './contexts/AcessibilidadeContext.tsx'
 import { UsuarioProvider } from './contexts/UsuarioContext.tsx'
 import './index.css'
-import { router } from './routes/router'
+import { router } from './routes/router.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

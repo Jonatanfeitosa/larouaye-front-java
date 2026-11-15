@@ -1,4 +1,4 @@
-import type { Integrante } from '../types/integrante'
+import type { Integrante } from '../types/integrante.ts'
 
 // Dados de identificação da equipe (não é conteúdo jurídico). Preencham os RMs!
 export const INTEGRANTES: Integrante[] = [
@@ -43,11 +43,3 @@ export const INTEGRANTES: Integrante[] = [
     tecnologias: ['Oracle SQL', 'Data Modeler'],
   },
 ]
-export interface Integrante {
-  id: string
-  nome: string
-  rm: string
-  papel: string
-  descricao: string
-  tecnologias: string[]
-}

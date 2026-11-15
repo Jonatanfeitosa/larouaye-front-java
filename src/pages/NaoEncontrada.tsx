@@ -1,12 +1,12 @@
+import { EstadoVazio } from '../components/EstadoVazio'
+import { LinkBotao } from '../components/LinkBotao'
 import { useTituloPagina } from '../hooks/useTituloPagina'
 
-// Página provisória do núcleo. Quem é dono desta página SUBSTITUI este arquivo pela versão real.
 export function NaoEncontrada() {
   useTituloPagina('Página não encontrada')
   return (
-    <section aria-labelledby="titulo-pagina">
-      <h1 id="titulo-pagina" className="text-3xl font-bold">Página não encontrada</h1>
-      <p className="mt-2">Em construção.</p>
-    </section>
+    <EstadoVazio titulo="Página não encontrada" texto="O endereço que você abriu não existe no LarOuAyê.">
+      <LinkBotao to="/">Voltar ao início</LinkBotao>
+    </EstadoVazio>
   )
 }

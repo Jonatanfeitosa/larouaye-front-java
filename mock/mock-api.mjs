@@ -1,6 +1,8 @@
 // API Java de MENTIRA, só para desenvolver/testar o front enquanto o Jonatan não publica a real.
-// Rode: node mock/mock-api.mjs   (porta 8080). O texto abaixo é EXEMPLO, NÃO é orientação jurídica.
+// Rode: node mock/mock-api.mjs   (porta 8080; para outra porta: PORT=8099 node mock/mock-api.mjs). O texto abaixo é EXEMPLO, NÃO é orientação jurídica.
 import { createServer } from 'node:http'
+
+const PORTA = Number(process.env.PORT) || 8080
 
 const orientacoes = [
   {
@@ -74,4 +76,4 @@ createServer(async (req, res) => {
     return json(200, { etapaId: d.etapaId, status: d.status })
   }
   json(404, { mensagem: 'Recurso não encontrado.' })
-}).listen(8080, () => console.log('mock em :8080'))
+}).listen(PORTA, () => console.log(`mock em :${PORTA}`))

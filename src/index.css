@@ -4,6 +4,8 @@
 @theme {
   --color-azul: #102b35;
   --color-ouro: #d8b875;
+  /* Dourado claro e SÓLIDO: fundo de hover dos botões (nunca use cor translúcida no hover) */
+  --color-ouro-claro: #efe0b5;
   --color-cinza: #f2f4f3;
   --color-grafite: #263238;
   /* Cores de estado (não estão na paleta de marca, mas status não pode depender só de dourado) */

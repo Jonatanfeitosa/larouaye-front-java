@@ -46,7 +46,7 @@ describe('BarraAcessibilidade', () => {
     renderizarBarra()
 
     expect(
-      screen.getByRole('group', { name: /recursos de acessibilidade/i }),
+      screen.getByRole('region', { name: /recursos de acessibilidade/i }),
     ).toBeInTheDocument()
 
     expect(

@@ -87,12 +87,19 @@ export function Faq() {
                       <h2 className="text-lg font-bold">
                         <button
                           type="button"
-                          className="min-h-12 w-full rounded-2xl p-4 text-left"
+                          className="flex min-h-12 w-full items-center justify-between gap-3 rounded-2xl p-4 text-left transition-colors hover:bg-ouro-claro motion-reduce:transition-none"
                           aria-expanded={aberta}
                           aria-controls={`faq-${o.id}`}
                           onClick={() => setAberto(aberta ? null : o.id)}
                         >
-                          {o.perguntaRelacionada ?? o.titulo}
+                          <span>{o.perguntaRelacionada ?? o.titulo}</span>
+                          {/* Seta: mostra que a pergunta abre e fecha (decorativa; o estado vai em aria-expanded) */}
+                          <span
+                            aria-hidden="true"
+                            className={`shrink-0 text-2xl transition-transform motion-reduce:transition-none ${aberta ? 'rotate-180' : ''}`}
+                          >
+                            ▾
+                          </span>
                         </button>
                       </h2>
                       {aberta && (

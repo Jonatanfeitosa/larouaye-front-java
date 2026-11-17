@@ -6,7 +6,7 @@ import { NaoEncontrada } from './NaoEncontrada'
 describe('NaoEncontrada (404)', () => {
   it('explica o problema e oferece o caminho de volta', () => {
     renderNaRota(<NaoEncontrada />, '/qualquer', '*')
-    expect(screen.getByText('Página não encontrada', { selector: 'h1,h2,h3' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: 'Página não encontrada' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Voltar ao início' })).toHaveAttribute('href', '/')
   })
 })

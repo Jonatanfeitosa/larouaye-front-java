@@ -4,7 +4,13 @@ Front-End da Global Solution FIAP 2026/2 (CitizenTech). Assistente gratuito e ac
 a compra do primeiro imóvel (informação pública e jurídica geral).
 
 ## 1. Integrantes
-Davi Felix · Fernando Oliveira (RM 570196) · Jonatan Feitosa · Marcelo da Mata · Vinícius Liberato — *(completar RMs)*
+| Integrante | RM |
+|---|---|
+| Davi Felix Cunha | *(RM a preencher)* |
+| Fernando Oliveira Francelino Sardinha | 570196 |
+| Jonatan Vieira Feitosa | 570452 |
+| Marcelo Candido da Mata Junior | 569584 |
+| Vinicius Liberato dos Anjos | 571480 |
 
 ## 2. Problema e solução
 Quem tem pouca informação enfrenta documentos e termos jurídicos difíceis ao comprar o primeiro imóvel. O LarOuAyê explica
@@ -32,18 +38,27 @@ Todas as telas com dados têm: carregando (skeleton), erro (com "Tentar de novo"
 npm install
 cp .env.example .env     # (opcional) ajuste VITE_PROXY_TARGET
 npm run dev              # http://localhost:5173 (o Vite repassa /api ao Java, sem CORS)
-node mock/mock-api.mjs   # (opcional) API de mentira na :8080
+node mock/mock-api.mjs   # (opcional, só desenvolvimento/testes) API de mentira na :8080; a entrega usa a API Java real
+npm test                 # testes (Vitest)
+npm run build            # gera dist/
 ```
 
 ## 9. Variáveis de ambiente
 `VITE_API_URL`, `VITE_API_PREFIX`, `VITE_EMAIL_CONTATO` (ver `.env.example`).
 
 ## 10. Deploy
-Vercel. O `vercel.json` repassa `/api/*` ao Java no Render (**troque `larouaye-api.onrender.com` pela URL real**; evita CORS e erro de HTTPS) e redireciona o resto para `index.html` (evita 404 ao dar F5).
+Vercel. O `vercel.json` repassa `/api/*` ao Java no Render (hoje aponta para `https://larouaye-api.onrender.com`; evita CORS e erro de HTTPS) e redireciona o resto para `index.html` (evita 404 ao dar F5).
 Veja também `ARQUITETURA.md` e `RECURSOS-OFICIAIS.md`.
 
 ## 11. Responsividade
 Testado em 390×844, 768×1024 e 1440×900.
 
 ## 12. Links
-Deploy: *(colar URL da Vercel)* · API Java: *(colar URL do Render)* · Vídeo: *(colar URL do YouTube)* · Repositório PÚBLICO: *(colar URL)*
+- Repositório PÚBLICO: *(colar a URL exata, ex.: https://github.com/tecnando-rpa/larouaye)*
+- Deploy (Vercel): *(colar URL)*
+- API Java (Render): https://larouaye-api.onrender.com
+- Vídeo (YouTube, até 3 min): *(colar URL)*
+- Contato: fernando.oliveira.francelino@gmail.com
+
+## 13. Uso de IA
+Ferramentas de IA generativa foram usadas como apoio (revisão de acessibilidade e testes); código revisado e testado pelo grupo.

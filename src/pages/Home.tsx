@@ -15,7 +15,7 @@ export function Home() {
   return (
     <div className="space-y-10">
       <section aria-labelledby="titulo-home" className="rounded-3xl bg-azul p-6 text-white sm:p-10">
-        <Casinha className="mb-4 h-28 w-28" />
+        <div className="mb-4 inline-block rounded-full bg-cinza p-3"><Casinha className="h-24 w-24" /></div>
         <h1 id="titulo-home" className="text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
           Seu primeiro imóvel, sem juridiquês
         </h1>

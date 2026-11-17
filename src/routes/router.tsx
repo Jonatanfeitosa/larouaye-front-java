@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router'
+import { ErroInesperado } from '../components/ErroInesperado'
 import { Assistente } from '../pages/Assistente'
 import { Contato } from '../pages/Contato'
 import { Faq } from '../pages/Faq'
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
   {
     path: '/',
     element: <RootLayout />,
+    errorElement: <ErroInesperado />,
     children: [
       { index: true, element: <Home /> },
       { path: 'assistente', element: <Assistente /> },

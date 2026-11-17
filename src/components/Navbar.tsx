@@ -1,18 +1,61 @@
-import { Link } from 'react-router'
+import { useState } from 'react'
+import { Link, NavLink } from 'react-router'
 
-// Menu provisório do núcleo. O dono (Marcelo) SUBSTITUI este arquivo pelo menu responsivo e acessível.
+const LINKS = [
+  { to: '/', rotulo: 'Início' },
+  { to: '/assistente', rotulo: 'Assistente' },
+  { to: '/jornada', rotulo: 'Minha jornada' },
+  { to: '/faq', rotulo: 'Dúvidas' },
+  { to: '/sobre', rotulo: 'Sobre' },
+  { to: '/integrantes', rotulo: 'Integrantes' },
+  { to: '/contato', rotulo: 'Contato' },
+]
+
 export function Navbar() {
+  const [aberto, setAberto] = useState(false)
+
   return (
-    <nav aria-label="Principal" className="bg-white px-4 py-3">
-      <ul className="mx-auto flex max-w-5xl flex-wrap gap-4">
-        <li><Link to="/">Início</Link></li>
-        <li><Link to="/assistente">Assistente</Link></li>
-        <li><Link to="/jornada">Minha jornada</Link></li>
-        <li><Link to="/faq">Dúvidas</Link></li>
-        <li><Link to="/sobre">Sobre</Link></li>
-        <li><Link to="/integrantes">Integrantes</Link></li>
-        <li><Link to="/contato">Contato</Link></li>
-      </ul>
-    </nav>
+    <header className="bg-azul text-white">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-4 py-3">
+        <Link to="/" className="text-2xl font-bold text-ouro focus-visible:outline-ouro">
+          LarOuAyê
+        </Link>
+
+        <button
+          type="button"
+          className="min-h-11 rounded-lg border-2 border-white px-4 font-semibold focus-visible:outline-ouro lg:hidden"
+          aria-expanded={aberto}
+          aria-controls="menu-principal"
+          onClick={() => setAberto((valor) => !valor)}
+        >
+          {aberto ? 'Fechar menu' : 'Abrir menu'}
+        </button>
+
+        <nav
+          id="menu-principal"
+          aria-label="Principal"
+          className={`${aberto ? 'block' : 'hidden'} w-full lg:block lg:w-auto`}
+        >
+          <ul className="flex flex-col gap-1 lg:flex-row">
+            {LINKS.map((link) => (
+              <li key={link.to}>
+                <NavLink
+                  to={link.to}
+                  end={link.to === '/'}
+                  onClick={() => setAberto(false)}
+                  className={({ isActive }) =>
+                    `block rounded-lg px-3 py-2 font-semibold focus-visible:outline-ouro ${
+                      isActive ? 'bg-ouro text-azul' : 'hover:bg-white/15'
+                    }`
+                  }
+                >
+                  {link.rotulo}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
   )
 }

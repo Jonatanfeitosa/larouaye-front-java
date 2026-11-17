@@ -181,7 +181,7 @@ export function Assistente() {
         </p>
       </div>
       <div className="flex flex-col items-center gap-4 rounded-2xl bg-white p-4 sm:flex-row">
-        <Casinha falando={voz.falando} className="h-28 w-28 shrink-0" />
+        <Casinha falando={voz.falando} pensando={enviando} className="h-28 w-28 shrink-0" />
         <div>
           <p className="text-lg font-semibold">{SAUDACAO}</p>
           <div className="mt-2 flex flex-wrap gap-2">

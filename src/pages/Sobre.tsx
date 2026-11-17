@@ -41,9 +41,9 @@ export function Sobre() {
         </h2>
         <ul className="mt-3 list-disc space-y-1 pl-6">
           <li>Linguagem simples e frases curtas.</li>
-          <li>Leitura em voz alta das páginas e das respostas.</li>
-          <li>Letra que pode ser aumentada e uso completo pelo teclado.</li>
-          <li>Compatível com leitores de tela.</li>
+          <li>Leitura em voz alta das páginas e das respostas, e ditado da pergunta pelo microfone (Chrome e Edge).</li>
+          <li>Letra que pode ser aumentada, modo de leitura fácil, alto contraste e uso completo pelo teclado.</li>
+          <li>Feito para funcionar com leitores de tela.</li>
           <li>Nenhum dado sensível, como CPF, é pedido.</li>
         </ul>
         <p className="mt-3">

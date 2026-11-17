@@ -1,8 +1,23 @@
-// Mascote do LarOuAyê: uma casinha simpática. A boca mexe enquanto ela fala.
+// Mascote do LarOuAyê: uma casinha simpática. A boca mexe enquanto ela fala e sai fumacinha da chaminé enquanto ela pensa.
 // Decorativa (aria-hidden): o conteúdo falado sempre também está escrito na tela.
-export function Casinha({ falando = false, className = 'h-28 w-28' }: { falando?: boolean; className?: string }) {
+interface CasinhaProps {
+  falando?: boolean
+  pensando?: boolean
+  className?: string
+}
+
+export function Casinha({ falando = false, pensando = false, className = 'h-28 w-28' }: CasinhaProps) {
   return (
-    <svg viewBox="0 0 120 120" aria-hidden="true" className={className}>
+    // overflow-visible: a fumaça sobe acima da chaminé, para fora do quadro do desenho.
+    <svg viewBox="0 0 120 120" aria-hidden="true" className={`overflow-visible ${className}`}>
+      {/* fumacinha: três nuvens que sobem, crescem e somem, uma depois da outra */}
+      {pensando && (
+        <g data-fumaca>
+          <circle cx="88" cy="12" r="4" className="casinha-fumaca" style={{ animationDelay: '0s' }} />
+          <circle cx="88" cy="12" r="4" className="casinha-fumaca" style={{ animationDelay: '0.6s' }} />
+          <circle cx="88" cy="12" r="4" className="casinha-fumaca" style={{ animationDelay: '1.2s' }} />
+        </g>
+      )}
       {/* chaminé e telhado */}
       <rect x="82" y="16" width="12" height="24" rx="2" fill="#263238" />
       <path d="M8 58 L60 12 L112 58 Z" fill="#102b35" />

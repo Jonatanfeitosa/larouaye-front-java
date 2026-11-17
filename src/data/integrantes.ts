@@ -5,7 +5,7 @@ export const INTEGRANTES: Integrante[] = [
   {
     id: 'davi-felix',
     nome: 'Davi Felix',
-    rm: 'RM a preencher',
+    rm: '569393',
     papel: 'Inteligência Artificial e Chatbot',
     descricao: 'Treina e disponibiliza os dois modelos de Machine Learning e a API Flask que classifica as dúvidas.',
     tecnologias: ['Python', 'Flask', 'scikit-learn'],

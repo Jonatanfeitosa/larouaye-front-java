@@ -2,17 +2,20 @@
 
 /* Paleta do LarOuAyê (roteiro do front): vira classes como bg-azul, text-grafite, bg-ouro */
 @theme {
-  --color-azul: #102b35;
-  --color-ouro: #d8b875;
-  /* Dourado claro e SÓLIDO: fundo de hover dos botões (nunca use cor translúcida no hover) */
-  --color-ouro-claro: #efe0b5;
+  /* Paleta "clara e confiável": azul de serviço público sobre fundo branco, amarelo só para destaque.
+     Todos os pares de texto/fundo passam de 4,5:1 (AA); a maioria passa de 7:1 (AAA).
+     Os nomes dos tokens não mudam: trocar a paleta é trocar só estes valores. */
+  --color-azul: #1351b4; /* faixas, botões, títulos e links */
+  --color-ouro: #ffcd07; /* destaque (botão principal da faixa azul, aba ativa) */
+  /* Amarelo claro e SÓLIDO: fundo de hover dos botões (nunca use cor translúcida no hover) */
+  --color-ouro-claro: #ffe27a;
   /* Linha sutil entre faixas escuras (vira branco sólido no alto contraste) */
-  --color-divisor: rgb(255 255 255 / 0.25);
-  --color-cinza: #f2f4f3;
-  --color-grafite: #263238;
-  /* Cores de estado (não estão na paleta de marca, mas status não pode depender só de dourado) */
-  --color-erro: #9b1c1c;
-  --color-ok: #166534;
+  --color-divisor: rgb(255 255 255 / 0.3);
+  --color-cinza: #f8f8f8; /* fundo da página */
+  --color-grafite: #1b2b4b; /* texto do corpo e barra de acessibilidade */
+  /* Cores de estado (status não pode depender só da cor da marca) */
+  --color-erro: #b3261e;
+  --color-ok: #146c2e;
 }
 
 @layer base {

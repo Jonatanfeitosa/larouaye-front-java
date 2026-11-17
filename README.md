@@ -6,7 +6,7 @@ a compra do primeiro imóvel (informação pública e jurídica geral).
 ## 1. Integrantes
 | Integrante | RM |
 |---|---|
-| Davi Felix Cunha | *(RM a preencher)* |
+| Davi Felix Cunha | 569393 |
 | Fernando Oliveira Francelino Sardinha | 570196 |
 | Jonatan Vieira Feitosa | 570452 |
 | Marcelo Candido da Mata Junior | 569584 |

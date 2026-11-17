@@ -91,3 +91,24 @@ html[data-contraste="alto"] :focus-visible { outline-width: 4px; }
 @keyframes casinha-fala { 0%, 100% { transform: scaleY(0.4); } 50% { transform: scaleY(1.4); } }
 .casinha-boca-fala { transform-box: fill-box; transform-origin: center; animation: casinha-fala 0.28s infinite; }
 @media (prefers-reduced-motion: reduce) { .casinha-boca-fala { animation: none; } }
+
+/* Fumacinha da chaminé enquanto a Casinha pensa. A cor vem do token azul (vira preto no alto contraste). */
+@keyframes casinha-fumaca {
+  0% { transform: translate(0, 0) scale(0.6); opacity: 0; }
+  20% { opacity: 0.5; }
+  100% { transform: translate(10px, -30px) scale(2.2); opacity: 0; }
+}
+.casinha-fumaca {
+  fill: var(--color-azul);
+  opacity: 0;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: casinha-fumaca 1.8s ease-out infinite;
+}
+/* Sem animação para quem pediu menos movimento: ficam três nuvens paradas, que ainda indicam "pensando". */
+@media (prefers-reduced-motion: reduce) {
+  .casinha-fumaca { animation: none; opacity: 0.4; }
+  .casinha-fumaca:nth-child(1) { transform: translate(0, -8px); }
+  .casinha-fumaca:nth-child(2) { transform: translate(6px, -18px) scale(1.4); }
+  .casinha-fumaca:nth-child(3) { transform: translate(12px, -30px) scale(1.9); opacity: 0.2; }
+}

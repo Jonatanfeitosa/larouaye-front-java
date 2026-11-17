@@ -6,6 +6,8 @@
   --color-ouro: #d8b875;
   /* Dourado claro e SÓLIDO: fundo de hover dos botões (nunca use cor translúcida no hover) */
   --color-ouro-claro: #efe0b5;
+  /* Linha sutil entre faixas escuras (vira branco sólido no alto contraste) */
+  --color-divisor: rgb(255 255 255 / 0.25);
   --color-cinza: #f2f4f3;
   --color-grafite: #263238;
   /* Cores de estado (não estão na paleta de marca, mas status não pode depender só de dourado) */
@@ -76,6 +78,7 @@ html[data-contraste="alto"] {
   --color-cinza: #fff;
   --color-ouro: #ffd600; /* amarelo forte: 14:1 sobre preto e preto sobre ele também */
   --color-ouro-claro: #ffe970;
+  --color-divisor: #fff;
   --color-erro: #8a0000;
   --color-ok: #004d1a;
 }

@@ -17,7 +17,7 @@ export function Navbar() {
   return (
     <header className="bg-azul text-white">
       <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-between gap-2 px-4 py-3">
-        <Link to="/" className="text-2xl font-bold text-ouro focus-visible:outline-ouro">
+        <Link to="/" className="inline-flex min-h-11 items-center text-2xl font-bold text-ouro focus-visible:outline-ouro">
           LarOuAyê
         </Link>
 

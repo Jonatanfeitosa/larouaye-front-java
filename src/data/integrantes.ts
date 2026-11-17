@@ -21,7 +21,7 @@ export const INTEGRANTES: Integrante[] = [
   {
     id: 'jonatan-feitosa',
     nome: 'Jonatan Feitosa',
-    rm: 'RM a preencher',
+    rm: '570452',
     papel: 'Java, regras jurídicas e integração',
     descricao: 'Desenvolve a API central, o motor jurídico e a comunicação entre front, Flask e banco.',
     tecnologias: ['Java', 'Spring Boot', 'JDBC'],
@@ -29,7 +29,7 @@ export const INTEGRANTES: Integrante[] = [
   {
     id: 'marcelo-da-mata',
     nome: 'Marcelo da Mata',
-    rm: 'RM a preencher',
+    rm: '569584',
     papel: 'Computational Thinking Using Python',
     descricao: 'Cria o orientador de aquisição por terminal e valida e testa o front.',
     tecnologias: ['Python', 'JSON', 'Testes'],
@@ -37,7 +37,7 @@ export const INTEGRANTES: Integrante[] = [
   {
     id: 'vinicius-liberato',
     nome: 'Vinícius Liberato',
-    rm: 'RM a preencher',
+    rm: '571480',
     papel: 'Oracle e modelagem de dados',
     descricao: 'Modela e implementa o banco relacional que guarda consultas, orientações e progresso.',
     tecnologias: ['Oracle SQL', 'Data Modeler'],

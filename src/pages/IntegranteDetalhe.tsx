@@ -13,7 +13,7 @@ export function IntegranteDetalhe() {
 
   if (!integrante) {
     return (
-      <EstadoVazio titulo="Integrante não encontrado" texto="Esse endereço não corresponde a ninguém da equipe.">
+      <EstadoVazio nivel={1} titulo="Integrante não encontrado" texto="Esse endereço não corresponde a ninguém da equipe.">
         <LinkBotao to="/integrantes">Ver todos os integrantes</LinkBotao>
       </EstadoVazio>
     )

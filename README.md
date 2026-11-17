@@ -47,11 +47,7 @@ npm run build            # gera dist/
 `VITE_API_URL`, `VITE_API_PREFIX`, `VITE_EMAIL_CONTATO` (ver `.env.example`).
 
 ## 10. Deploy
-<<<<<<< HEAD
 Vercel. O `vercel.json` repassa `/api/*` ao Java no Render (hoje aponta para `https://larouaye-api.onrender.com`; evita CORS e erro de HTTPS) e redireciona o resto para `index.html` (evita 404 ao dar F5).
-=======
-Vercel. O `vercel.json` repassa `/api/*` ao Java no Render (**troque `larouaye-api.onrender.com` pela URL real**; evita CORS e erro de HTTPS) e redireciona o resto para `index.html` (evita 404 ao dar F5).
->>>>>>> origin/develop
 Veja também `ARQUITETURA.md` e `RECURSOS-OFICIAIS.md`.
 
 ## 11. Responsividade

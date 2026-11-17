@@ -14,7 +14,7 @@ describe('IntegranteDetalhe (rota dinâmica /integrantes/:id)', () => {
   })
   it('id que não existe: mensagem amigável com caminho de volta', () => {
     renderNaRota(<IntegranteDetalhe />, '/integrantes/xyz', '/integrantes/:id')
-    expect(screen.getByText('Integrante não encontrado', { selector: 'h1,h2,h3' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: 'Integrante não encontrado' })).toBeInTheDocument()
     expect(screen.getByRole('link', { name: 'Ver todos os integrantes' })).toHaveAttribute('href', '/integrantes')
   })
 })

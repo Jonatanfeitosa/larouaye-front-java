@@ -1,6 +1,6 @@
 
-import { beforeEach, describe, expect, it, vi } from 'vitest'
-import { fireEvent, render, screen, waitFor } from '@testing-library/react'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { act, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import { StatusServidor } from './StatusServidor'
 
 const { verificarServidorFalso } = vi.hoisted(() => ({
@@ -15,13 +15,23 @@ beforeEach(() => {
   verificarServidorFalso.mockReset()
 })
 
+afterEach(() => vi.useRealTimers())
+
 describe('StatusServidor', () => {
-  it('mostra mensagem enquanto verifica a conexao', () => {
+  it('só mostra a mensagem de conexao se a resposta demorar', () => {
+    vi.useFakeTimers()
     verificarServidorFalso.mockImplementation(
       () => new Promise(() => {}),
     )
 
     render(<StatusServidor />)
+
+    // Logo no começo não aparece nada: evita a página "pular" quando o servidor responde rápido.
+    expect(screen.queryByRole('status')).not.toBeInTheDocument()
+
+    act(() => {
+      vi.advanceTimersByTime(1600)
+    })
 
     expect(screen.getByRole('status')).toHaveTextContent(
       'Conectando ao servidor',

@@ -1,9 +1,0 @@
-target/
-.env
-*.log
-.idea/
-.vscode/
-*.iml
-.DS_Store
-.postman/
-*.jar.original

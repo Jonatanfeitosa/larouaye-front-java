@@ -17,12 +17,10 @@ export function BarraAcessibilidade() {
     'min-h-11 rounded-lg border-2 border-white px-3 text-sm font-semibold hover:bg-white/15 disabled:opacity-50'
 
   return (
-    <div className="bg-grafite text-white">
-      <div
-        role="group"
-        aria-label="Recursos de acessibilidade"
-        className="mx-auto flex max-w-5xl flex-wrap items-center gap-2 px-4 py-2"
-      >
+    // <section> com nome vira uma região (landmark): leitor de tela lista e pula direto para ela.
+    // border-divisor separa a barra do cabeçalho (no alto contraste os dois ficam pretos).
+    <section aria-label="Recursos de acessibilidade" className="border-b-2 border-divisor bg-grafite text-white">
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center gap-2 px-4 py-2">
         {suportado && (
           <button
             type="button"
@@ -49,6 +47,6 @@ export function BarraAcessibilidade() {
           Letra: {fonte}
         </span>
       </div>
-    </div>
+    </section>
   )
 }

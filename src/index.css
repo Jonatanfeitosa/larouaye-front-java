@@ -4,6 +4,10 @@
 @theme {
   --color-azul: #102b35;
   --color-ouro: #d8b875;
+  /* Dourado claro e SÓLIDO: fundo de hover dos botões (nunca use cor translúcida no hover) */
+  --color-ouro-claro: #efe0b5;
+  /* Linha sutil entre faixas escuras (vira branco sólido no alto contraste) */
+  --color-divisor: rgb(255 255 255 / 0.25);
   --color-cinza: #f2f4f3;
   --color-grafite: #263238;
   /* Cores de estado (não estão na paleta de marca, mas status não pode depender só de dourado) */
@@ -42,6 +46,19 @@
     outline: 3px solid var(--color-azul);
     outline-offset: 2px;
   }
+
+  /* Sobre fundo escuro o anel azul some (azul sobre azul): lá o foco é dourado */
+  .bg-azul :focus-visible,
+  .bg-grafite :focus-visible {
+    outline-color: var(--color-ouro);
+  }
+
+  /* Alto contraste: link solto no texto fica azul e sublinhado (não depende só da cor).
+     Está no @layer base de propósito: classes do Tailwind (ex.: text-white de um link-botão) ganham desta regra. */
+  html[data-contraste="alto"] main a:not(.inline-flex) {
+    color: #0000ee;
+    text-decoration: underline;
+  }
 }
 
 /* Leitura fácil: linhas curtas, mais espaço entre linhas, letras e parágrafos. */
@@ -51,11 +68,24 @@ html[data-leitura="facil"] main li { max-width: 60ch; }
 html[data-leitura="facil"] main p + p,
 html[data-leitura="facil"] main li + li { margin-top: 0.75rem; }
 
-/* Alto contraste: preto sobre branco, bordas fortes. */
-html[data-contraste="alto"] body { background: #fff; color: #000; }
-html[data-contraste="alto"] h1, html[data-contraste="alto"] h2, html[data-contraste="alto"] h3 { color: #000; }
-html[data-contraste="alto"] main a { color: #0000ee; }
-html[data-contraste="alto"] main { --color-azul: #000; }
+/* ALTO CONTRASTE: em vez de pintar elemento por elemento (o que brigava com as classes do Tailwind e
+   deixava texto preto sobre fundo preto), trocamos os TOKENS da paleta. Toda classe bg-azul, text-azul,
+   border-azul, bg-cinza... muda junto e continua combinando: escuro vira preto, claro vira branco.
+   Regras soltas (fora de @layer) vencem qualquer classe do Tailwind: por isso aqui só entram tokens e bordas. */
+html[data-contraste="alto"] {
+  --color-azul: #000;
+  --color-grafite: #000;
+  --color-cinza: #fff;
+  --color-ouro: #ffd600; /* amarelo forte: 14:1 sobre preto e preto sobre ele também */
+  --color-ouro-claro: #ffe970;
+  --color-divisor: #fff;
+  --color-erro: #8a0000;
+  --color-ok: #004d1a;
+}
+/* Bordas translúcidas (border-azul/20) viram preto sólido: cartão branco sobre fundo branco não pode "sumir" */
+html[data-contraste="alto"] [class*="border-azul/"] { border-color: #000; }
+/* Foco mais grosso */
+html[data-contraste="alto"] :focus-visible { outline-width: 4px; }
 
 /* Boca da Casinha mexendo enquanto ela fala (desligada se a pessoa pediu menos movimento). */
 @keyframes casinha-fala { 0%, 100% { transform: scaleY(0.4); } 50% { transform: scaleY(1.4); } }

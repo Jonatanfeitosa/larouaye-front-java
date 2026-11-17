@@ -30,13 +30,14 @@ function Lista({ usuarioId, dados }: { usuarioId: number; dados: Dados }) {
   const [status, setStatus] = useState<Record<number, StatusEtapa>>(() =>
     Object.fromEntries(dados.progresso.map((p) => [p.etapaId, p.status])),
   )
-  const [salvando, setSalvando] = useState<number | null>(null)
+  // Guarda QUAL etapa e QUAL status estão sendo salvos: só esse botão mostra o carregamento
+  const [salvando, setSalvando] = useState<{ etapaId: number; status: StatusEtapa } | null>(null)
   const [erro, setErro] = useState<string | null>(null)
   const [aviso, setAviso] = useState('')
 
   async function mudar(etapa: Etapa, novo: StatusEtapa) {
     setErro(null)
-    setSalvando(etapa.id)
+    setSalvando({ etapaId: etapa.id, status: novo })
     try {
       // Escrita real: só atualiza a tela depois que o servidor confirmou.
       const r = await salvarProgresso(usuarioId, etapa.id, novo)
@@ -114,7 +115,9 @@ function Lista({ usuarioId, dados }: { usuarioId: number; dados: Dados }) {
                         key={s}
                         variante={atual === s ? 'primario' : 'secundario'}
                         aria-pressed={atual === s}
-                        carregando={salvando === e.id}
+                        carregando={salvando?.etapaId === e.id && salvando.status === s}
+                        // enquanto salva esta etapa, os outros botões dela ficam parados (evita dois envios)
+                        disabled={salvando?.etapaId === e.id}
                         onClick={() => void mudar(e, s)}
                       >
                         {ROTULO[s]}

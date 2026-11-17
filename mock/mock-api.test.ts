@@ -2,12 +2,13 @@
 import { spawn, type ChildProcess } from 'node:child_process'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 
-// Sobe o mock de verdade (porta 8080) e fala com ele por HTTP, como o front faz.
+// Sobe o mock de verdade e fala com ele por HTTP, como o front faz.
+// Usa a porta 8099 (e não a 8080) para o teste não brigar com o Java local rodando na 8080.
 let processo: ChildProcess
-const base = 'http://localhost:8080/api'
+const base = 'http://localhost:8099/api'
 
 beforeAll(async () => {
-  processo = spawn('node', ['mock/mock-api.mjs'], { stdio: 'pipe' })
+  processo = spawn('node', ['mock/mock-api.mjs'], { stdio: 'pipe', env: { ...process.env, PORT: '8099' } })
   await new Promise<void>((ok, falha) => {
     const t = setTimeout(() => falha(new Error('mock não subiu')), 8000)
     processo.stdout?.on('data', (d: Buffer) => { if (String(d).includes('mock em')) { clearTimeout(t); ok() } })

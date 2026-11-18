@@ -104,12 +104,39 @@ export function Faq() {
                       </h2>
                       {aberta && (
                         <div id={`faq-${o.id}`} className="border-t border-azul/20 p-4">
-                          <p>{o.conteudo}</p>
+                          <p className="whitespace-pre-line">{o.conteudo}</p>
+                          {o.cuidados && o.cuidados.length > 0 && (
+                            <>
+                              <h3 className="mt-4 font-bold">Cuidados</h3>
+                              <ul className="mt-1 list-disc space-y-1 pl-6">
+                                {o.cuidados.map((c) => (
+                                  <li key={c}>{c}</li>
+                                ))}
+                              </ul>
+                            </>
+                          )}
                           {o.baseLegal && o.baseLegal.length > 0 && (
-                            <p className="mt-2 text-base">
-                              <strong>Base legal:</strong> {o.baseLegal.map((b) => b.norma).join('; ')}
+                            <p className="mt-3 text-base">
+                              <strong>Base legal:</strong>{' '}
+                              {o.baseLegal.map((b, i) => (
+                                <span key={b.norma}>
+                                  {i > 0 && '; '}
+                                  {b.url ? (
+                                    <a href={b.url} target="_blank" rel="noopener noreferrer" className="underline">
+                                      {b.norma}
+                                      <span className="sr-only"> (abre em nova aba)</span>
+                                    </a>
+                                  ) : (
+                                    b.norma
+                                  )}
+                                </span>
+                              ))}
                             </p>
                           )}
+                          <p className="mt-3 text-base">
+                            {o.dataRevisao && <>Revisado em {o.dataRevisao}. </>}
+                            Informação geral: não substitui um advogado nem o cartório.
+                          </p>
                         </div>
                       )}
                     </Card>

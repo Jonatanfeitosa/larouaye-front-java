@@ -1,4 +1,4 @@
-// Todo acesso à API Java passa por aqui: URL base, cabeçalhos, timeout, response.ok e erros.
+﻿// Todo acesso à API Java passa por aqui: URL base, cabeçalhos, timeout, response.ok e erros.
 
 // URL base vazia = mesma origem. Em desenvolvimento o Vite repassa /api ao Java (proxy, sem CORS);
 // na Vercel o vercel.json repassa /api ao Render. Só preencha VITE_API_URL se NÃO usar esses repasses.
@@ -10,8 +10,8 @@ export const PREFIXO_API = ((import.meta.env.VITE_API_PREFIX as string | undefin
   '',
 )
 
-// 30 s: servidores gratuitos (Render) levam até ~50 s para "acordar" na primeira chamada.
-const TEMPO_LIMITE_MS = 30000
+// 90 s: servidores gratuitos (Render) levam até ~50 s para "acordar" na primeira chamada.
+const TEMPO_LIMITE_MS = 90000
 
 export class ApiError extends Error {
   status: number | null
@@ -96,3 +96,4 @@ export async function requisicao<T>(caminho: string, opcoes: OpcoesRequisicao = 
 
   return (await resposta.json()) as T
 }
+

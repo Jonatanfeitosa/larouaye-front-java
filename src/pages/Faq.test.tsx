@@ -35,6 +35,17 @@ describe('Faq (4 estados de tela)', () => {
     expect(screen.getByText(/Lei 6.015\/1973/)).toBeInTheDocument()
   })
 
+  it('mostra cuidados, link da fonte, data de revisão e o aviso de informação geral', async () => {
+    const o = [{ id: 3, titulo: 'Consórcio', perguntaRelacionada: 'Como funciona o consórcio?', conteudo: 'Grupo que paga todo mês.', cuidados: ['Confira a administradora'], baseLegal: [{ norma: 'Lei 11.795/2008', url: 'https://exemplo.gov.br/lei' }], dataRevisao: '17/11/2026' }]
+    vi.stubGlobal('fetch', vi.fn().mockResolvedValue(respostaJson(o)))
+    renderNaRota(<Faq />)
+    await userEvent.click(await screen.findByRole('button', { name: /consórcio/i }))
+    expect(screen.getByText('Confira a administradora')).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: /Lei 11.795\/2008/ })).toHaveAttribute('href', 'https://exemplo.gov.br/lei')
+    expect(screen.getByText(/Revisado em 17\/11\/2026/)).toBeInTheDocument()
+    expect(screen.getByText(/não substitui um advogado/)).toBeInTheDocument()
+  })
+
   it('busca filtra e anuncia a quantidade; sem resultado oferece limpar', async () => {
     vi.stubGlobal('fetch', vi.fn().mockResolvedValue(respostaJson(orientacoes)))
     renderNaRota(<Faq />)

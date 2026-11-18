@@ -29,6 +29,16 @@ const PERGUNTAS_PRONTAS = [
   { emoji: '📄', texto: 'Quais documentos o vendedor precisa me mostrar?' },
   { emoji: '🏷️', texto: 'O que é a matrícula do imóvel?' },
   { emoji: '✍️', texto: 'Qual a diferença entre escritura e registro?' },
+  { emoji: '🤝', texto: 'Como funciona o consórcio de imóveis?' },
+  { emoji: '💰', texto: 'Quanto de imóvel cabe no meu bolso?' },
+  { emoji: '🏦', texto: 'Tenho dúvidas sobre financiamento. Como faço?' },
+  { emoji: '👪', texto: 'Posso comprar imóvel da família sem problemas com herdeiros?' },
+  { emoji: '📉', texto: 'Quando posso amortizar o financiamento?' },
+  { emoji: '🏛️', texto: 'Quais bancos financiam imóvel?' },
+  { emoji: '🧾', texto: 'Quanto pago de ITBI, cartório e certidões?' },
+  { emoji: '📑', texto: 'Quais certidões devo pedir antes de comprar?' },
+  { emoji: '🎁', texto: 'Com subsídio, posso amortizar antes de 5 anos?' },
+  { emoji: '🔍', texto: 'E se o banco avaliar o imóvel por menos?' },
 ]
 
 const SAUDACAO = 'Oi, eu sou a Casinha. Pode falar ou escolher uma pergunta pronta. Eu explico com calma.'

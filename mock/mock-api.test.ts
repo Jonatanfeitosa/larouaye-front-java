@@ -34,6 +34,16 @@ describe('mock da API Java', () => {
     const lista = await (await fetch(`${base}/usuarios/${u.id}/etapas`)).json() as { etapaId: number; status: string }[]
     expect(lista).toContainEqual({ etapaId: 1, status: 'CONCLUIDA' })
   })
+  it('catálogo traz as 11 orientações com fonte e data de revisão', async () => {
+    const l = await (await fetch(`${base}/orientacoes`)).json() as { baseLegal?: unknown[]; dataRevisao?: string }[]
+    expect(l).toHaveLength(11)
+    for (const o of l) { expect(o.baseLegal?.length).toBeGreaterThan(0); expect(o.dataRevisao).toBeTruthy() }
+  })
+  it('pergunta sobre consórcio recebe a orientação de consórcio; sem assunto vira NAO_RECONHECIDA', async () => {
+    const post = (pergunta: string) => fetch(`${base}/usuarios/1/consultas`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ pergunta }) }).then((r) => r.json()) as Promise<{ status: string; resposta?: { titulo: string } }>
+    expect((await post('Como funciona o consórcio?')).resposta?.titulo).toMatch(/Consórcio/)
+    expect((await post('Qual a cor do céu hoje?')).status).toBe('NAO_RECONHECIDA')
+  })
   it('rota inexistente devolve 404', async () => {
     expect((await fetch(`${base}/nao-existe`)).status).toBe(404)
   })

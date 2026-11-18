@@ -1,0 +1,304 @@
+[
+  {
+    "id": 1,
+    "titulo": "Consórcio de imóvel: como funciona",
+    "categoria": "FINANCIAMENTO",
+    "perguntaRelacionada": "Como funciona o consórcio de imóveis?",
+    "conteudo": "Consórcio é um grupo de pessoas que paga todo mês para formar uma reserva em comum. A cada mês, uma ou mais pessoas do grupo são contempladas e recebem uma carta de crédito para comprar o imóvel.\n\nA contemplação acontece por sorteio ou por lance (uma oferta de dinheiro para ser escolhido antes). Ninguém sabe em que mês será contemplado: não existe data garantida.\n\nNo consórcio não há juros como no financiamento, mas há custos: taxa de administração, fundo de reserva e, se estiver no contrato, seguro. O valor da carta e da parcela costuma ser corrigido ao longo do tempo.\n\nQuem cuida do grupo é uma administradora de consórcio, que precisa de autorização do Banco Central.\n\nResumindo: o consórcio costuma custar menos, mas exige paciência e planejamento. O financiamento libera o dinheiro na hora, mas cobra juros.",
+    "cuidados": [
+      "Confira se a administradora é autorizada pelo Banco Central antes de assinar.",
+      "Desconfie de quem promete contemplação garantida ou rápida.",
+      "Leia no contrato: taxa de administração, fundo de reserva, forma de reajuste, regras de lance e multa se você desistir.",
+      "Depois de contemplado, o imóvel ainda precisa estar com a documentação regular (matrícula e certidões)."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Lei 11.795/2008",
+        "referencia": "Sistema de Consórcios",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/lei/l11795.htm"
+      },
+      {
+        "norma": "Banco Central do Brasil",
+        "referencia": "regula e fiscaliza as administradoras de consórcio"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 2,
+    "titulo": "Quanto de imóvel cabe no meu bolso",
+    "categoria": "FINANCIAMENTO",
+    "perguntaRelacionada": "Como calcular o valor máximo de imóvel que cabe no meu bolso sem apertar o orçamento?",
+    "conteudo": "Os bancos costumam limitar a parcela do financiamento a até 30% da renda bruta da família. Exemplo: com renda de R$ 5.000 por mês, a parcela pode ser de até R$ 1.500.\n\nPasso a passo para fazer a conta:\n1. Some a renda bruta mensal que você consegue comprovar (de quem vai comprar junto, se for o caso).\n2. Multiplique por 0,30. Esse é o teto da parcela para o banco.\n3. Coloque esse valor de parcela e o prazo no simulador do banco para ver quanto pode ser financiado. O prazo pode chegar a 35 anos, conforme a linha de crédito, e a idade do comprador mais velho também limita o prazo.\n4. Some a entrada e os custos da compra (ITBI, cartório, avaliação). Como referência de mercado, esses custos ficam em torno de 4% a 8% do valor do imóvel. Confira se você tem esse dinheiro.\n\nPara não apertar o orçamento: o teto do banco é o máximo, não o ideal. Se puder, escolha uma parcela bem abaixo dele, para sobrar dinheiro para condomínio, IPTU, luz, água, mercado e imprevistos.",
+    "cuidados": [
+      "Conte só a renda que você consegue comprovar.",
+      "Some condomínio, IPTU, seguros e contas da casa antes de decidir.",
+      "Guarde uma reserva de emergência: não gaste tudo na entrada.",
+      "Compare o CET (custo total), não só a taxa de juros.",
+      "Os limites mudam por banco e por programa. Simule e confirme."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Prática dos bancos",
+        "referencia": "parcela de até 30% da renda bruta familiar; confirme no simulador do seu banco"
+      },
+      {
+        "norma": "CAIXA, financiamento de imóveis",
+        "referencia": "prazo de até 420 meses, conforme a modalidade",
+        "url": "https://www.caixa.gov.br/voce/habitacao/financiamento-de-imoveis/Paginas/default.aspx"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 3,
+    "titulo": "Documentação legal: por onde começar",
+    "categoria": "DOCUMENTACAO",
+    "perguntaRelacionada": "Quais são os documentos mais importantes para comprar um imóvel com segurança?",
+    "conteudo": "A documentação é a parte que mais dá problema na compra de um imóvel. Por isso vale começar por ela.\n\nO documento mais importante é a matrícula atualizada, pedida ao Cartório de Registro de Imóveis. Ela conta a história do imóvel: quem é o dono, se há dívida ligada a ele (como hipoteca ou penhora), se ele está alienado a um banco e se há ação na Justiça registrada.\n\nSó é dono quem está registrado na matrícula. Confira se o nome do vendedor é o mesmo que aparece como proprietário.\n\nA lei diz que dívidas e ações que não estão registradas na matrícula, em regra, não valem contra quem compra de boa-fé. Mesmo assim, é prudente pedir também certidões do vendedor.\n\nPeça ao vendedor: documento com foto, CPF, comprovante de estado civil (e pacto antenupcial, se houver) e comprovantes de que IPTU e condomínio estão em dia.\n\nVeja também a orientação \"Quais documentos e certidões pedir antes de comprar\", que explica item por item o que observar.",
+    "cuidados": [
+      "Peça a matrícula com data recente (em geral, até 30 dias). Confirme o prazo com o cartório ou o banco.",
+      "Confira se quem vende é o dono registrado e se o cônjuge também assina, quando for o caso.",
+      "Desconfie de pressa, de preço muito abaixo do mercado e de pedido de pagamento antes da checagem.",
+      "Na dúvida, consulte um advogado ou o cartório antes de pagar sinal."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Lei 13.097/2015, art. 54",
+        "referencia": "concentração dos atos na matrícula",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13097.htm"
+      },
+      {
+        "norma": "Lei 6.015/1973",
+        "referencia": "Lei de Registros Públicos",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm"
+      },
+      {
+        "norma": "CAIXA",
+        "referencia": "documentação básica para crédito imobiliário",
+        "url": "https://www.caixa.gov.br/Downloads/habitacao-documentos-gerais/Documentacao_basica.pdf"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 4,
+    "titulo": "Financiamento imobiliário: passo a passo",
+    "categoria": "FINANCIAMENTO",
+    "perguntaRelacionada": "Tenho dúvidas sobre financiamento. Como faço?",
+    "conteudo": "Financiar é pegar um empréstimo no banco para pagar o imóvel e devolver em parcelas mensais, com juros. Até você terminar de pagar, o imóvel fica como garantia do banco (alienação fiduciária).\n\nPasso a passo:\n1. Simulação: informe renda, valor do imóvel, entrada e prazo no site, no aplicativo ou na agência. Simule em mais de um banco.\n2. Análise de crédito: você entrega documentos pessoais e comprovante de renda. O banco também vê se você pode usar o FGTS.\n3. Análise do imóvel: o banco pede os documentos do vendedor e do imóvel e envia um engenheiro para avaliar o imóvel.\n4. Contrato: se estiver tudo certo, você assina. Leia com calma o valor financiado, o prazo, a taxa, o CET e os seguros.\n5. Registro: o contrato é registrado na matrícula do imóvel, no cartório, e o dinheiro é liberado ao vendedor.\n\nVocê precisa ter a entrada (uma parte do valor do imóvel; o FGTS pode ajudar quem tem direito) e dinheiro para os custos da compra.\n\nSobre as parcelas: no sistema SAC elas começam mais altas e diminuem com o tempo. Na Tabela Price elas são parecidas mês a mês, mas a dívida cai mais devagar no começo.",
+    "cuidados": [
+      "Compare o CET, que inclui juros, seguros e tarifas, e não só a taxa.",
+      "A avaliação do banco pode ser menor que o preço combinado. Nesse caso, a diferença sai do seu bolso.",
+      "Não pague um sinal alto antes da aprovação do crédito e da análise dos documentos.",
+      "Guarde cópia de tudo e leia o contrato inteiro antes de assinar."
+    ],
+    "baseLegal": [
+      {
+        "norma": "CAIXA, financiamento de imóveis",
+        "referencia": "passo a passo e sistemas de amortização",
+        "url": "https://www.caixa.gov.br/voce/habitacao/financiamento-de-imoveis/Paginas/default.aspx"
+      },
+      {
+        "norma": "Lei 9.514/1997",
+        "referencia": "alienação fiduciária de imóvel",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 5,
+    "titulo": "Comprar imóvel da família: cuidados com os herdeiros",
+    "categoria": "CONTRATO",
+    "perguntaRelacionada": "Quais cuidados jurídicos um casal deve ter ao comprar um imóvel da família de um dos cônjuges, para evitar questionamentos dos outros herdeiros?",
+    "conteudo": "Quando o imóvel é de um parente, o maior risco é outro herdeiro contestar a compra depois. A lei existe para proteger a parte de cada herdeiro.\n\nSe quem vende é pai, mãe ou outro ascendente e quem compra é filho ou outro descendente, a venda só fica segura se os outros descendentes e o cônjuge do vendedor concordarem de forma expressa. Sem isso, a venda pode ser anulada na Justiça (o Código Civil diz que ela é \"anulável\").\n\nSe o imóvel ainda está no nome de alguém que já faleceu, ele faz parte da herança. Antes de vender, é preciso fazer o inventário e a partilha, e todos os herdeiros participam.\n\nSe a ideia for doar em vez de vender: a doação de pais para filhos conta como adiantamento da herança e não pode passar da parte que o doador pode dar.\n\nPara se proteger:\n1. Peça a matrícula e confira quem é o dono.\n2. Obtenha a autorização por escrito de todos os herdeiros e do cônjuge do vendedor, de preferência na própria escritura (combine com o tabelião).\n3. Pague por transferência bancária, para o vendedor, por um valor justo de mercado.\n4. Registre a escritura na matrícula.\n5. Procure um advogado ou um tabelião antes de assinar. Cada família tem uma situação diferente.",
+    "cuidados": [
+      "Sem a autorização dos outros herdeiros, a compra pode ser contestada na Justiça.",
+      "Venda de fachada para esconder uma doação pode ser anulada.",
+      "Combine com o cartório como o imóvel ficará no nome do casal, conforme o regime de bens.",
+      "Guarde todos os comprovantes de pagamento."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Código Civil, art. 496",
+        "referencia": "venda de ascendente a descendente",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+      },
+      {
+        "norma": "Código Civil, art. 544",
+        "referencia": "doação de pais a filhos como adiantamento da herança",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 6,
+    "titulo": "Amortização do financiamento",
+    "categoria": "FINANCIAMENTO",
+    "perguntaRelacionada": "Quando posso começar a amortizar a dívida? Tem valor mínimo? Como é o processo?",
+    "conteudo": "Amortizar é pagar um valor extra para diminuir o saldo da dívida, além das parcelas normais. Quitar é pagar tudo o que falta.\n\nA lei do consumidor garante o direito de pagar a dívida antes do prazo, no todo ou em parte, com redução proporcional dos juros.\n\nQuando começar e valor mínimo: as regras do dia a dia (a partir de qual parcela, valor mínimo, como pedir) dependem do banco e do seu contrato. Não existe um valor mínimo único para todos. Confirme no contrato, no aplicativo ou na agência.\n\nComo é o processo: você pede ao banco, informa quanto quer pagar e escolhe o efeito:\n1. Reduzir o prazo: o financiamento termina antes e, em geral, você economiza mais juros.\n2. Reduzir a parcela: o prazo continua igual e a parcela mensal fica menor.\nO banco gera o boleto ou o débito com o valor.\n\nFGTS: quem tem direito pode usar o FGTS para amortizar a dívida, com intervalo mínimo de 2 anos entre uma utilização e outra.",
+    "cuidados": [
+      "Peça a simulação por escrito antes de pagar, com o novo prazo ou a nova parcela.",
+      "Pergunte se há alguma cobrança e se são cobrados juros dos dias quando o pagamento não cai no vencimento.",
+      "Se os juros do seu contrato são altos, amortizar costuma compensar. Se são baixos, compare com manter uma reserva de emergência.",
+      "Guarde o comprovante e confira se o saldo devedor foi atualizado."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Código de Defesa do Consumidor, art. 52, § 2º",
+        "referencia": "pagamento antecipado com redução proporcional dos juros",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+      },
+      {
+        "norma": "Lei 8.036/1990, art. 20",
+        "referencia": "uso do FGTS na amortização",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8036consol.htm"
+      },
+      {
+        "norma": "CAIXA, perguntas frequentes de contratos",
+        "url": "https://www.caixa.gov.br/voce/habitacao/perguntas-frequentes-contrato/Paginas/default.aspx"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 7,
+    "titulo": "Como escolher o banco para financiar",
+    "categoria": "FINANCIAMENTO",
+    "perguntaRelacionada": "Quais são os melhores bancos para financiamento?",
+    "conteudo": "Não existe um banco que seja o melhor para todo mundo. A taxa e as condições mudam conforme a sua renda, a entrada, o prazo, o imóvel e o seu relacionamento com o banco.\n\nO que comparar:\n• CET (Custo Efetivo Total): soma juros, seguros e tarifas. É o número certo para comparar propostas.\n• Taxa de juros, e se ela é fixa ou corrigida por um índice, como a TR ou o IPCA.\n• Valor financiado, prazo máximo e quanto você precisa dar de entrada.\n• Seguros obrigatórios e tarifas.\n• Se aceita o FGTS e se tem programas para a primeira casa, como o Minha Casa, Minha Vida, operado pela Caixa.\n\nPasso a passo: faça a simulação em pelo menos 3 bancos com os mesmos dados (valor, entrada e prazo) e compare o CET e a primeira parcela.\n\nO Banco Central divulga as taxas médias de juros de cada instituição no crédito imobiliário. E, depois de financiar, a portabilidade permite levar a dívida para outro banco com juros menores.",
+    "cuidados": [
+      "Compare as propostas pelo CET e por escrito.",
+      "Desconfie de promessa de aprovação garantida e de quem cobra para \"liberar\" o crédito.",
+      "As taxas mudam todo mês: simule perto da data em que for contratar.",
+      "Pergunte sobre cada tarifa e cada seguro cobrado."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Banco Central do Brasil",
+        "referencia": "taxas de juros por instituição financeira (crédito imobiliário)"
+      },
+      {
+        "norma": "Resolução CMN 3.517/2007",
+        "referencia": "Custo Efetivo Total (CET)"
+      },
+      {
+        "norma": "Resolução CMN 4.292/2013",
+        "referencia": "portabilidade de crédito"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 8,
+    "titulo": "Custos além do preço: ITBI, escritura, registro e certidões",
+    "categoria": "REGISTRO",
+    "perguntaRelacionada": "Quais valores são pagos (imposto, emolumentos, certidões) para regularizar o imóvel no nome do comprador?",
+    "conteudo": "Além do preço do imóvel, o comprador paga alguns custos para o imóvel ficar no nome dele. Os principais:\n\n• ITBI: imposto da prefeitura sobre a compra. A alíquota e a base de cálculo mudam de cidade para cidade (muitas cobram entre 2% e 3%). É pago antes do registro.\n• Escritura pública: feita no cartório de notas, com valor definido pela tabela de emolumentos do estado. Em compras financiadas pelo Sistema Financeiro da Habitação, em geral o contrato do banco substitui a escritura (confirme no seu caso).\n• Registro na matrícula: feito no Cartório de Registro de Imóveis, também pela tabela do estado. É o registro que faz de você o dono.\n• Certidões: matrícula atualizada e outras certidões, com valores pequenos definidos pelos cartórios.\n• Se financiar: avaliação do imóvel e outras tarifas do banco.\n• Terreno de marinha: pode haver laudêmio, uma taxa cobrada pela União.\n\nComo referência de mercado, muita gente reserva entre 4% e 8% do valor do imóvel para esses custos, além da entrada. É só uma média: o valor real depende da cidade e do estado.\n\nPara saber o valor exato, peça a simulação do ITBI na prefeitura e um orçamento de escritura e registro no cartório.",
+    "cuidados": [
+      "O ITBI é pago antes do registro. Sem registro, você não é dono do imóvel.",
+      "Podem existir alíquotas menores e descontos em cartório para financiamento e programas habitacionais. Pergunte na prefeitura e no cartório.",
+      "Veja no contrato quem paga cada custo (em geral, o comprador paga ITBI, escritura e registro).",
+      "Guarde os recibos e peça a matrícula já atualizada no seu nome."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Constituição Federal, art. 156, II",
+        "referencia": "o ITBI é imposto municipal"
+      },
+      {
+        "norma": "Lei 6.015/1973",
+        "referencia": "registro de imóveis",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm"
+      },
+      {
+        "norma": "Lei 9.514/1997, art. 38",
+        "referencia": "contrato com força de escritura pública",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l9514.htm"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 9,
+    "titulo": "Quais documentos e certidões pedir antes de comprar",
+    "categoria": "DOCUMENTACAO",
+    "perguntaRelacionada": "Quais documentos e certidões devo pedir antes de comprar um imóvel, e o que observar em cada um?",
+    "conteudo": "Do imóvel\n• Matrícula atualizada (certidão de inteiro teor): veja se o dono é o vendedor, a descrição do imóvel, hipoteca ou alienação fiduciária (dívida com banco), penhora, usufruto, cláusulas de inalienabilidade ou impenhorabilidade, indisponibilidade de bens e ações registradas.\n• Certidão de ônus reais: mostra as restrições sobre o imóvel. Em muitos cartórios, já vem dentro da matrícula.\n• IPTU: certidão de débitos do município e carnê.\n• Condomínio: declaração de que não há débitos.\n• Imóvel novo ou reformado: habite-se e averbação da construção na matrícula.\n\nDo vendedor (pessoa física)\n• Documento com foto, CPF e comprovante de estado civil. Se for casado, o cônjuge também assina. Peça o pacto antenupcial, se houver.\n• Certidões negativas: Justiça Federal, Justiça Estadual (cível e execuções fiscais), Justiça do Trabalho, protestos e tributos federais, da cidade do imóvel e da cidade onde o vendedor mora. Mostram dívidas e processos que podem atingir o negócio.\n\nDo vendedor (empresa)\n• Contrato social atualizado e certidões da empresa, incluindo tributos federais e débitos trabalhistas.\n\nO que observar\n• Hipoteca, alienação fiduciária e penhora precisam ser baixadas (canceladas) antes da compra.\n• A lei diz que o que não está registrado na matrícula, em regra, não pode ser cobrado de quem compra de boa-fé. Mas há exceções, como falência do vendedor, e por isso as certidões ajudam.\n• Se o imóvel veio de herança, peça o formal de partilha ou a escritura de inventário.\n• Não pague sinal antes de ler a matrícula.",
+    "cuidados": [
+      "Imóvel com alienação fiduciária só pode ser vendido depois de quitada a dívida com o banco.",
+      "Peça as certidões do vendedor na cidade do imóvel e na cidade onde ele mora.",
+      "Anote a data de cada certidão: elas perdem a validade.",
+      "Na dúvida sobre algum item, consulte um advogado ou o cartório."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Lei 13.097/2015, art. 54",
+        "url": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13097.htm"
+      },
+      {
+        "norma": "Lei 6.015/1973",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l6015compilada.htm"
+      },
+      {
+        "norma": "CAIXA",
+        "referencia": "documentação básica para crédito imobiliário",
+        "url": "https://www.caixa.gov.br/Downloads/habitacao-documentos-gerais/Documentacao_basica.pdf"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 10,
+    "titulo": "Subsídio e amortização antes de 5 anos",
+    "categoria": "FINANCIAMENTO",
+    "perguntaRelacionada": "Se eu comprar com subsídio, posso amortizar antes do prazo de 5 anos?",
+    "conteudo": "Depende do tipo de subsídio e do tipo de pagamento antecipado que você quer fazer. Confirme sempre com a Caixa ou com o banco do seu contrato.\n\nNo Minha Casa, Minha Vida, na linha com subvenção, a Portaria MCID 1.248/2023 diz que:\n• Nos primeiros 5 anos (60 meses), o imóvel não pode ser vendido nem transferido. Isso fica anotado na matrícula.\n• A quitação antecipada, que é pagar tudo antes do prazo, é permitida. Mas você precisa devolver o subsídio de forma proporcional às parcelas que ainda faltavam.\n\nJá a amortização parcial, que é pagar só um valor extra sem quitar tudo, depende do seu contrato e da linha de crédito. Pergunte à Caixa se isso muda o subsídio ou o prazo.\n\nSe o benefício for o desconto do FGTS, as regras vêm do Conselho Curador do FGTS e podem ser diferentes. Vender o imóvel antes do prazo mínimo pode obrigar a devolver parte do desconto.",
+    "cuidados": [
+      "Antes de quitar, peça por escrito o valor do subsídio que terá de ser devolvido.",
+      "Vender antes de 5 anos pode obrigar a devolver parte do subsídio, e o novo comprador não recebe os benefícios do programa.",
+      "A regra depende da data em que o seu contrato foi assinado e do programa. Confira o seu contrato.",
+      "Existem regras especiais para quem recebe subsídio integral. Pergunte à Caixa."
+    ],
+    "baseLegal": [
+      {
+        "norma": "Portaria MCID nº 1.248/2023",
+        "referencia": "arts. 5º, 6º e 7º (prazo de 60 meses e quitação antecipada)",
+        "url": "https://www.gov.br/cidades/pt-br/acesso-a-informacao/institucional/base-juridica/portarias/PortariaMCIDn12482023.pdf"
+      },
+      {
+        "norma": "Resoluções do Conselho Curador do FGTS",
+        "referencia": "desconto do FGTS"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  },
+  {
+    "id": 11,
+    "titulo": "E se o banco avaliar o imóvel por menos?",
+    "categoria": "FINANCIAMENTO",
+    "perguntaRelacionada": "E se o banco avaliar o imóvel por um valor menor que o do contrato com a construtora?",
+    "conteudo": "O banco financia uma parte do valor do imóvel. Na prática, ele usa o menor valor entre o preço do contrato e a avaliação feita pelo engenheiro do banco.\n\nSe a avaliação ficar abaixo do preço combinado, o valor que o banco empresta diminui. A diferença precisa ser coberta por você, com mais entrada.\n\nO que você pode fazer:\n1. Pagar a diferença com dinheiro seu (o FGTS pode ajudar, se você tiver direito).\n2. Tentar renegociar o preço com a construtora ou o vendedor.\n3. Pedir ao banco a reanálise da avaliação, levando documentos que mostrem o valor do imóvel.\n4. Simular em outro banco, que fará uma nova avaliação.\n5. Ver no contrato com a construtora o que acontece se o financiamento não sair ou sair menor.\n\nLeia o contrato antes de assinar: veja se existe cláusula que protege você caso o financiamento não seja aprovado no valor combinado.",
+    "cuidados": [
+      "Não assuma o contrato com a construtora sem saber o que acontece se o financiamento for menor.",
+      "Peça ao banco o laudo ou o valor da avaliação por escrito.",
+      "Guarde os comprovantes de tudo que já pagou à construtora.",
+      "Se a construtora cobrar multa para desistir, procure um advogado ou o Procon."
+    ],
+    "baseLegal": [
+      {
+        "norma": "CAIXA, financiamento de imóveis",
+        "referencia": "análise de engenharia e avaliação do imóvel",
+        "url": "https://www.caixa.gov.br/voce/habitacao/financiamento-de-imoveis/Paginas/default.aspx"
+      },
+      {
+        "norma": "Código de Defesa do Consumidor",
+        "referencia": "proteção em contratos de adesão",
+        "url": "https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm"
+      }
+    ],
+    "dataRevisao": "17/11/2026"
+  }
+]
